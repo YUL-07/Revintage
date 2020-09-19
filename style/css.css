@@ -1,0 +1,290 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* 초기설정 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+a{
+    text-decoration: none;
+}
+
+.Eng{
+    font-family: 'Playfair Display', serif;
+}
+
+html,body{
+    overflow: hidden;
+    touch-action: none;
+}
+/* 
+header,nav,div{
+    display: block;
+} */
+/* 초기설정 */
+
+
+/* 기본 */
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fullscreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+div#info{
+    background: url('../image/background_2560.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+div#content1{
+    background: url('../image/background_2_2560.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+div#content2{
+    background: url('../image/background_3_2560.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+div#content3{
+    background: url('../image/background_4_2560.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* 기본 */
+
+
+/* #tbBtn 시작*/
+/* #tbBtn{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    padding-left: 30px;
+    margin-left: 92vw;
+    margin-top: 85vh;
+}
+#tbBtn i{
+    position: absolute;
+    font-size: 50px;
+    color: #000;
+    cursor: pointer;
+}
+#tbBtn i#bBtn{
+    margin-top: 50px;
+} */
+/* #tbBtn 끝*/
+
+
+
+/* nav#gnb 시작 */
+div#modal{
+    position: absolute;
+    display: none;
+    width: 100%;
+    margin: 0;
+    
+}
+div#fix{
+    position: fixed;
+    z-index: 8;
+}
+
+div#memu{
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 30px;
+    color: #000;
+    cursor: pointer;
+}
+div#memu>i.material-icons{
+    font-size: 45px;    
+}
+div#memu>i#memuOn{
+    position: absolute;
+    display: none;
+}
+div#cls{
+    float: left;
+    margin-top: 50vh;
+    margin-left: 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+nav#gnb{
+    width: 550px;
+    height: 100vh;
+    background-color: #c9ba9d;
+}
+nav#gnb>ul{
+    float: right;
+    list-style: none;
+}
+nav#gnb>ul li.mainLi{
+    display: block;
+    width: 450px;
+    height: 25vh;
+    text-align: center;
+    cursor: pointer;
+}
+nav#gnb>ul>li.mainLi>a{
+    font-size: 53px;
+    font-style: oblique;
+    color: #3a3a3a;
+    line-height: 25vh;
+}
+nav#gnb>ul>li.mainLi:hover a{
+    font-weight: bold;
+    color: #fedab6;
+}
+/* nav#gnb 끝 */
+
+
+
+
+/* header#header 시작 */
+header#header{
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+header#header div#logo{
+    position: absolute;
+    z-index: 999;
+    margin-left: 45vw;
+    margin-top: 10px;
+}
+header#header div#logo img{
+    width: 12vw;
+    height: 10vh;
+}
+
+nav#lnb{
+    width: 40vw;
+    height: 50px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+nav#lnb>ul{
+    list-style: none;
+}
+nav#lnb>ul>li{
+    display: inline-block;
+    width: 9.5vw;
+    margin: 0 1px;
+}
+nav#lnb>ul>li a{
+    font-size: 2vmin;
+    color: #343434;
+    line-height: 50px;
+}
+nav#lnb>ul>li:hover a{
+    font-style: oblique;
+    font-weight: bold;
+    color: #ab723d;
+}
+/* header#header 끝 */
+
+
+
+
+
+/* div#info 시작 */
+div#info>p{
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 15vw;
+    width: 70vw;
+    height: 50vh;
+    line-height: 50vh;
+    font-size: 150px;
+    text-align: center;
+    color: #facea2;
+    border: 10px solid #facea2;
+    /* color: #c9ba9d;
+    border: 10px solid #c9ba9d; */
+    
+}
+/* div#info 끝 */
+
+
+/* div#content1 시작 */
+
+.commFrm>.tbl{
+    width: 75vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+.commFrm>.tbl>ul{
+    width: 35vw;
+    height: 40vh;
+    float: left;
+    list-style: none;
+}
+.commFrm>.tbl li{
+    margin-top: 10px;
+}
+.commFrm>.tbl li:first-child{
+    font-size: 5vmin;
+    line-height: 5vmin;
+    padding-left: 5px;
+    color: #9a9a9a;
+    font-style: italic;
+}
+.commFrm>.tbl li:nth-child(2){
+    font-size: 3vmin;
+    padding-left: 10px;
+}
+.commFrm>.tbl li:nth-child(3),li:nth-child(4){
+    font-size: 2vmin;
+    padding-left: 10px;
+}
+
+.commFrm>.tbl li:nth-child(5),
+.commFrm>.tbl li:nth-child(5)~li{
+    display: inline-block;
+    width: 15vw;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #c9ba9d;
+}
+.commFrm>.tbl li:nth-child(5):hover,
+.commFrm>.tbl li:nth-child(5)~li:hover{
+    background-color: #c9ba9d;
+}
+.commFrm>.tbl a{
+    font-size: 20px;
+    color: #000;
+}
+.commFrm>.tbl li:nth-child(5):hover>a,
+.commFrm>.tbl li:nth-child(5)~li:hover>a{
+    color: #fff;
+}
+.commFrm>.tbl img{
+    width: 38vw;
+    height: 54vh;
+    float: right;
+} 
+/* div#content1 끝 */
